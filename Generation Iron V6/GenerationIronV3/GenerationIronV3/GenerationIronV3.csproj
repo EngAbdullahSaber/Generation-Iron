@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2878110D-9C0D-41ED-887C-4F1D72902C08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenerationIronV1</RootNamespace>
+    <AssemblyName>GenerationIronV1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DataVisualization">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Web.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization.Design">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Web.DataVisualization.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Windows.Forms.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="SettingsForm.xaml.cs">
+      <DependentUpon>SettingsForm.xaml</DependentUpon>
+    </Compile>
+    <Page Include="calcForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="classForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CoachForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DashForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="logForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="calcForm.xaml.cs">
+      <DependentUpon>calcForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="classForm.xaml.cs">
+      <DependentUpon>classForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoachForm.xaml.cs">
+      <DependentUpon>CoachForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DashForm.xaml.cs">
+      <DependentUpon>DashForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="logForm.xaml.cs">
+      <DependentUpon>logForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.xaml.cs">
+      <DependentUpon>LoginForm.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MembersForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MembersForm.xaml.cs">
+      <DependentUpon>MembersForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icons8-dumbbell-100.png" />
+    <Resource Include="Assets\icons8-dumbbell-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\home.png" />
+    <Resource Include="Assets\logout.png" />
+    <Resource Include="Assets\weightlifting %281%29.png" />
+    <Resource Include="Assets\weightlifting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\runer-silhouette-running-fast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\stick-man-running-on-a-treadmill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\b1.jpg" />
+    <Resource Include="Assets\b2.jpg" />
+    <Resource Include="Assets\b3.jpg" />
+    <Resource Include="Assets\b4.jpg" />
+    <Resource Include="Assets\b5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\im.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\facebook %281%29.png" />
+    <Resource Include="Assets\google-plus.png" />
+    <Resource Include="Assets\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\groceries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\gym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="configuration.png" />
+    <Resource Include="question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\pause.png" />
+    <Resource Include="Assets\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\bin.png" />
+    <Resource Include="Assets\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icons8-clear-formatting-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icons8-clear-formatting-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\runner.png" />
+    <Resource Include="Assets\strong.png" />
+    <Resource Include="Assets\weight-loss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\eye.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
